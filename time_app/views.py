@@ -7,4 +7,4 @@ def display(request):
     context = {
         "time": strftime(%B, %A, %y, %I, %M, %p)
     }
-    return render()
+    return render(request, "index.html", context)

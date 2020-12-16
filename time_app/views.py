@@ -5,7 +5,7 @@ from time import gmtime, strftime
 
 def display(request):
     context = {
-        "date": strftime("%A, %B %d, %Y%I:%M %p")
+        "date": strftime("%A, %B %d, %Y%I:%M %p"),
         "time": strftime("%Y%I:%M %p")
     }
     return render(request, "index.html", context)
